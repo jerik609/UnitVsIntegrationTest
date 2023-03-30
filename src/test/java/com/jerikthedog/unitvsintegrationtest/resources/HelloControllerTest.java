@@ -14,10 +14,14 @@ class HelloControllerTest {
         this is not the controller, but e.g. just the method "hello" in this case
      */
 
+    // a proper unit test
     @Test
     void hello() {
         final var helloController = new HelloController(); // arrange
         final var response = helloController.hello("World"); // act
         assertEquals("Hello, World", response);// assert
     }
+
+
+
 }
